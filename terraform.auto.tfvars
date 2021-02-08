@@ -18,8 +18,6 @@ vpc = {
   availability_zones  = ["us-east-1a", "us-east-1b"]
 }
 
-launch_config_image_id = "ami-047a51fa27710816e"
-
 root_block_device = {
   volume_type           = "gp2"
   volume_size           = 8
