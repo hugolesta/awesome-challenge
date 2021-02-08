@@ -20,8 +20,8 @@ resource "aws_iam_role" "iam_role" {
   assume_role_policy = data.template_file.aws_iam_role_tpl.rendered
 }
 
-resource "aws_iam_role_policy" "ec2_describe_tags" {
-  name   = "ec2DescribeTags"
+resource "aws_iam_role_policy" "ec2_default_role" {
+  name   = "${var.env["project"]}-${var.env["environment"]}-ec2DefaultRole"
   role   = aws_iam_role.iam_role.id
   policy = data.template_file.aws_iam_role_policy_tpl.rendered
 }
