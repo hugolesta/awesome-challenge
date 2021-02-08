@@ -62,6 +62,9 @@ data "template_file" "ssm_tunnel_instance" {
 
 data "template_file" "apache_installer" {
   template = file("./templates/install_apache.tpl")
+  vars = {
+    REGION = var.env["region"]
+  }
 }
 
 

@@ -49,11 +49,11 @@ In case you need deploy the whole solution, you should run the following command
 The current deployed ec2 machines have a System manager agent to improve security connections, this way open an ssh port is not necessary.
 
 Steps:
-    - Go to System manager service.
-    - Enter to Session Manager.
-    - Hit Start session.
-    - Once the infrastructure is deployed you should see the machines there, you can select one and connect via SSM agent.
-    - Select one machine and hit Start session button again.
+- Go to System manager service.
+- Enter to Session Manager.
+- Hit Start session.
+- Once the infrastructure is deployed you should see the machines there, you can select one and connect via SSM agent.
+- Select one machine and hit Start session button again.
 
 # Built With
 
